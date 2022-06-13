@@ -31,7 +31,7 @@ public class ProductController {
 		
 		List<Product> allProducts = service.findAllProducts();
 		
-		log.info("Displaying all the avialable products from DB, count: {}", allProducts.size());
+		log.info("Displaying all the available products from DB, count: {}", allProducts.size());
 		
 		return new APIResponse<>(allProducts.size(), allProducts);
 		
