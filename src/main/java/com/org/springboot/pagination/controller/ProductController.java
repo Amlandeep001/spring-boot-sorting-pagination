@@ -30,6 +30,9 @@ public class ProductController {
 	private APIResponse<List<Product>> getProducts(){
 		
 		List<Product> allProducts = service.findAllProducts();
+		
+		log.info("Displaying all the avialable products from DB, count: {}", allProducts.size());
+		
 		return new APIResponse<>(allProducts.size(), allProducts);
 		
 	}
