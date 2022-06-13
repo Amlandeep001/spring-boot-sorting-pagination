@@ -50,8 +50,8 @@ public class ProductController {
 		
 		log.info("Displaying products after pagination where page number: {} and count in per page: {}", offset, pageSize);
 		
-		Page<Product> productrsWithPagination = service.findProductsWithPagination(offset, pageSize);
-		return new APIResponse<>(productrsWithPagination.getSize(), productrsWithPagination);
+		Page<Product> productsWithPagination = service.findProductsWithPagination(offset, pageSize);
+		return new APIResponse<>(productsWithPagination.getSize(), productsWithPagination);
 		
 	}
 }
