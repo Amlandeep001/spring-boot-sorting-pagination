@@ -9,6 +9,7 @@ import com.org.springboot.pagination.entity.Product;
  * @author amlandeep.nandi
  *
  */
-public interface ProductRepository extends JpaRepository<Product, Integer>{
+public interface ProductRepository extends JpaRepository<Product, Integer>
+{
 
 }

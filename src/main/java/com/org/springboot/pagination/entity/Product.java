@@ -1,10 +1,9 @@
 package com.org.springboot.pagination.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,21 +15,21 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="product")
-public class Product {
-	
+@Table(name = "product")
+public class Product
+{
+
 	@Id
 	@GeneratedValue
 	int id;
 	String name;
 	int quantity;
 	long price;
-	
-	public Product(String name, int quantity, long price) {
-		
+
+	public Product(String name, int quantity, long price)
+	{
 		this.name = name;
 		this.quantity = quantity;
 		this.price = price;
-		
 	}
 }
