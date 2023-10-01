@@ -18,7 +18,6 @@ import lombok.experimental.FieldDefaults;
 @Table(name = "product")
 public class Product
 {
-
 	@Id
 	@GeneratedValue
 	int id;

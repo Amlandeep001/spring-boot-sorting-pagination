@@ -12,8 +12,6 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class APIResponse<T>
 {
-
 	int recordCount;
 	T response;
-
 }
